@@ -9,6 +9,10 @@
   },
   "rules": {
     "semi": "off",
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "space-before-function-paren": "off",
+    "padded-blocks": "off",
+    "no-trailing-spaces": "off"
   }
 }
+
