@@ -1,9 +1,8 @@
-const loopback = require('loopback')
+// const loopback = require('loopback')
 const boot = require('loopback-boot')
 const LoopbackConsole = require('loopback-console')
 const appInfo = require('../package.json')
-
-const app = module.exports = loopback()
+const app = module.exports = require('chabok-api')
 
 app.start = function() {
   // start the web server
@@ -28,12 +27,13 @@ boot(app, __dirname, function(err) {
     LoopbackConsole.start(app, {
       prompt: `${appInfo.name}[${appInfo.version}] # `,
       handles: {
+        // chabok: chabok,
         behrad: {
           test: 1,
         },
       },
     })
   } else if (require.main === module) {
-    app.start()
+    // app.start()
   }
 })

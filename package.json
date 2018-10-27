@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "lint": "eslint .",
@@ -14,6 +14,7 @@
     "console2": "loopback-console"
   },
   "dependencies": {
+    "chabok-api": "git+https://github.com/chabokpush/adp-push-server.git",
     "compression": "^1.7.0",
     "cors": "^2.8.4",
     "helmet": "^1.3.0",
