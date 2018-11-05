@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "NODE_ENV=test ava",
+    "postinstall": "cd node_modules/chabok-api && npm install",
     "posttest": "npm run lint && nsp check",
     "start": "node .",
     "console": "node . --console",
